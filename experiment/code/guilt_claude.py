@@ -1,9 +1,3 @@
-"""
-guilt_claude.py — Guilt attribution via Anthropic Batch API.
-Usage:
-    !python guilt_claude.py --n_reps 5 --output_dir ./results_claude
-    !python guilt_claude.py --test
-"""
 import argparse, json, os, re, time
 from pathlib import Path
 import anthropic
