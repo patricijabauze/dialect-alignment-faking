@@ -1,9 +1,3 @@
-"""
-occup_claude.py — Occupation assignment via Anthropic Batch API.
-Usage:
-    !python occup_claude.py --n_reps 5 --output_dir ./results_claude
-    !python occup_claude.py --test
-"""
 import argparse, json, os, re, time
 from pathlib import Path
 import anthropic
