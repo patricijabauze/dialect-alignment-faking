@@ -61,6 +61,8 @@ Each trial follows a **two-turn conversational protocol**:
 
 **Total**: 40 stimuli × 2 dialects × 2 oversight × 2 scratchpad × 5 repetitions = 1,600 trials per task, × 3 tasks × 2 models = 9,600 trials.
 
+The three evaluation tasks (trait evaluation, guilt attribution, occupational assignment) were adapted from Hofmann et al. (2024). Experiment scripts were developed with assistance from Claude Anthropic for code implementation. All experimental design decisions, analysis choices, and interpretations are the author's own.
+
 ## Reproducibility
 
 - Random seed **42** was used for stimulus sampling; seed **12,345** was used for condition and trial ordering.
