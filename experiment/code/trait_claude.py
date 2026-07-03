@@ -1,10 +1,3 @@
-"""
-trait_claude.py — Trait evaluation via Anthropic Batch API (50% cost savings).
-Two-phase: alignment elicitation → trait evaluation.
-Usage:
-    !python trait_claude.py --n_reps 5 --output_dir ./results_claude
-    !python trait_claude.py --test
-"""
 import argparse, json, os, re, time
 from pathlib import Path
 import anthropic
@@ -123,7 +116,6 @@ def run_batch(model_id, stimuli, n_reps, temperature, output_dir):
         json.dump(task_results, open(p2_path, "w"))
         print(f"Phase 2 done: {len(task_results)} responses.")
 
-    # Merge
     rows = []
     for t in trials:
         ad = align_results.get(t["trial_id"]+"_a", {})
