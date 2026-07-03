@@ -1,6 +1,3 @@
-"""occup_llama.py — Occupation assignment via HuggingFace Transformers (with alignment caching).
-Usage: !python occup_llama.py --n_reps 5 | --test
-"""
 import argparse, gc, json, os
 from pathlib import Path
 import torch
